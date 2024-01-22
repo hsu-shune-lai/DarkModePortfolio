@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="./image/istockphoto-1313644269-612x612-PhotoRoom.png-PhotoRoom (1).png" class="logo" width="300px" height="300px">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">PORTFOLIO</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">HIRE ME</a></li>
+            </ul>
+            <img src="https://w7.pngwing.com/pngs/163/715/png-transparent-dark-mode-moon-night-forecast-weather-multimedia-solid-px-icon.png" id="icon">
+        </nav>
+
+        <div class="info">
+            <h1>I'm <span>Hsu</span> Shune Lai</h1>
+            <p>This is my official portfolio website to show 
+            my all works related <br>to web development</p>
+            <a href="">Download CV</a>
+        </div>
+
+        <div class="img-box">
+            <img src="./image/purple.png" class="back-img">
+            <img src="./image/hsu-PhotoRoom.png-PhotoRoom (1).png" class="main-img">
+        </div>
+
+        <div class="social-links">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+    <script>
+        var icon = document.getElementById("icon");
+icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        icon.src = "./image/sun.png";
+    }else{
+        icon.src = "https://w7.pngwing.com/pngs/163/715/png-transparent-dark-mode-moon-night-forecast-weather-multimedia-solid-px-icon.png";
+    }
+}
+    </script>
+</body>
+</html>
